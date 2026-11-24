@@ -1,0 +1,503 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyNet Co-Living Space | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    .site-header {
+        position: relative;
+        z-index: 10;
+        background: white;
+    }
+
+    .hero {
+        position: relative;
+        overflow: hidden;
+        min-height: 600px;
+        display: flex;
+        align-items: center;
+    }
+
+    .hero-video-slideshow {
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+        overflow: hidden;
+    }
+
+    .hero-video-slideshow::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.45);
+    }
+
+    .slide-video {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        inset: 0;
+        opacity: 0;
+        transition: opacity 1.5s ease-in-out;
+    }
+
+    .video-visible {
+        opacity: 1;
+    }
+
+    .video-hidden {
+        opacity: 0;
+    }
+
+    .hero-inner {
+        position: relative;
+        z-index: 2;
+        display: block;
+        width: 100%;
+    }
+
+    .hero-inner > div:first-child {
+        max-width: 650px;
+        color: white;
+    }
+
+    .hero-inner h1,
+    .hero-inner p,
+    .hero-inner .eyebrow {
+        color: white;
+    }
+
+    .hero-image {
+        display: none;
+    }
+	.auto-style1 {
+		border-width: 0px;
+	}
+	.auto-style2 {
+		text-align: right;
+	}
+	.auto-style5 {
+		font-size: large;
+	}
+	.auto-style6 {
+		font-size: x-large;
+	}
+	.auto-style13 {
+		margin-left: 680px;
+	}
+	</style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <header class="site-header">
+        <div class="container nav-wrap">
+
+            <a href="SkyNet%20Co-Living%20Spaces.html">
+			<img alt="skynet logo" class="auto-style1" height="20%" src="Screenshot%20(47).png" width="20%"></a><nav class="auto-style2">
+                <a href="about.html">About Us</a><span lang="en-gb"> </span>&nbsp;<a href="facilities.html">Facilities</a>
+				<span lang="en-gb">&nbsp;</span><a href="packages.html">Packages</a><span lang="en-gb">
+				</span>&nbsp;<a href="contact.html">Contact</a>
+				<span lang="en-gb">&nbsp;</span><a href="faq.html">FAQ<span lang="en-gb">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span>&nbsp;</a></nav>
+
+        </div>
+    </header>
+
+
+    <!-- HERO SECTION -->
+   <main>
+
+    <section class="hero">
+
+        <!-- BACKGROUND VIDEO SLIDESHOW -->
+        <div class="hero-video-slideshow">
+
+            <video id="video1"
+                   class="slide-video video-visible loop"
+                   autoplay muted playsinline >
+            </video>
+
+            <video id="video2"
+                   class="slide-video video-hidden"
+                   muted playsinline style="left: 8px; top: -4px">
+            </video>
+
+        </div>
+
+        <div class="container hero-inner">
+
+            <div>
+                <div class="eyebrow">
+                    <span lang="en-gb">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					</span>A PLACE TO LIVE, CONNECT AND GROW
+                </div>
+				<h1>
+                    <span lang="en-gb">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Feel at Home, Wherever Life Takes You.
+                </h1>
+
+                <p>
+                    <span lang="en-gb">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					</span>Welcome to SkyNet Co-Living Space, a welcoming</p>
+				<p>
+                    <span lang="en-gb">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					</span>&nbsp;environment designed to bring comfortable living,
+                </p>
+				<p>
+                    <span lang="en-gb">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					</span>shared <span lang="en-gb">&nbsp;Expe</span>riences and a
+					<span lang="en-gb">&nbsp;S</span>ense of <span lang="en-gb">&nbsp;</span>community 
+                </p>
+				<p>
+                    <span lang="en-gb">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					</span>together.
+                </p>
+
+                <a href="packages.html" class="btn">
+                    <span lang="en-gb">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				E</span>xplore Packages
+                </a>
+
+                <a href="about.html" class="btn secondary">
+                    Discover SkyNet
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+        <!-- WELCOME SECTION -->
+        <section class="section">
+            <div class="container">
+
+                <div class="section-heading">
+                    <div class="eyebrow">WELCOME TO SKYNET</div>
+
+                    <h2>More Than Just a Place to Stay</h2>
+
+                    <p>
+                        At SkyNet, we believe that a home should be more
+                        than four walls. It should be a place where you
+                        feel comfortable, build connections and create
+                        meaningful experiences.
+                    </p>
+                </div>
+
+                <div class="grid">
+
+                    <article class="card">
+                        <h3>Comfortable Living</h3>
+                        <p>
+                            Enjoy thoughtfully arranged living spaces
+                            designed to make everyday life comfortable
+                            and relaxing.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Community Living</h3>
+                        <p>
+                            Connect with others, share experiences and
+                            become part of a welcoming community.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Flexible Packages</h3>
+                        <p>
+                            Explore different accommodation options
+                            and find a stay that suits your needs.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ABOUT PREVIEW SECTION -->
+        <section class="section">
+            <div class="container soft-panel split">
+
+                <div>
+                    <div class="eyebrow">GET TO KNOW US</div>
+
+                    <h2>Discover the SkyNe<span lang="en-gb">s</span>t Experience</h2>
+
+                    <p>
+                        SkyNe<span lang="en-gb">s</span>t Co-Living Space brings together private
+                        living and shared experiences in one welcoming
+                        environment. Our goal is to create a space where
+                        people can feel at home while enjoying the
+                        benefits of community living.
+                    </p>
+
+                    <a href="about.html" class="btn">
+                        Learn More About Us
+                    </a>
+                </div>
+
+                <div>
+                    <h3>What We Value</h3>
+
+                    <ul class="feature-list">
+                        <li>Comfort and convenience</li>
+                        <li>Respect and community</li>
+                        <li>Welcoming shared spaces</li>
+                        <li>A positive living experience</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- FACILITIES PREVIEW -->
+        <section class="section">
+            <div class="container">
+
+                <div class="section-heading">
+                    <div class="eyebrow">EXPLORE OUR SPACE</div>
+
+                    <h2>Spaces Designed for Everyday Living</h2>
+
+                    <p>
+                        Discover the different spaces that can make
+                        your co-living experience comfortable and enjoyable.
+                    </p>
+                </div>
+
+                <div class="grid">
+
+                    <article class="card">
+                        <div class="card-image">
+                            <img alt="privet room" height="200" src="pexels-chrislyn-dsouza-424969149-34496715.jpg" width="150">
+                        </div>
+
+                        <h3>Private Rooms</h3>
+
+                        <p>
+                            Personal spaces where you can relax,
+                            recharge and enjoy your privacy.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-image">
+                            &nbsp;<p>
+							<img height="79" src="pexels-edmond-dantes-8067708.jpg" width="150"></p>
+                        </div>
+
+                        <h3>Co-Working Area</h3>
+
+                        <p>
+                            A shared space for studying, working
+                            and focusing on your goals.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-image">
+                            <img alt="comom lounge" height="94" src="pexels-sergio-j-avila-3793826-33944304.jpg" width="150">
+                        </div>
+
+                        <h3>Common Lounge</h3>
+
+                        <p>
+                            A relaxed environment for taking a break
+                            and spending time with others.
+                        </p>
+                    </article>
+
+                </div>
+
+                <p style="text-align:center; margin-top:25px;">
+                    <a href="facilities.html" class="btn">
+                        View All Facilities
+                    </a>
+                </p>
+
+            </div>
+        </section>
+
+
+        <!-- PACKAGES PREVIEW -->
+        <section class="section">
+            <div class="container">
+
+                <div class="section-heading">
+                    <div class="eyebrow">FIND YOUR PERFECT STAY</div>
+
+                    <h2>Explore Our Packages</h2>
+
+                    <p>
+                        Whether you are looking for a short stay or
+                        a longer living arrangement, explore our
+                        available package options.
+                    </p>
+                </div>
+
+                <div class="grid">
+
+                    <article class="card">
+                        <span class="tag">Premium</span>
+
+                        <h3>Premium Package</h3>
+
+                        <p>
+                            Explore an enhanced accommodation option
+                            with details available from our team.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <span class="tag">Standard</span>
+
+                        <h3>Standard Package</h3>
+
+                        <p>
+                            A practical option for enjoying the
+                            co-living experience.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <span class="tag">Flexible</span>
+
+                        <h3>Short-Term Package</h3>
+
+                        <p>
+                            An option for guests looking for
+                            accommodation for a shorter period.
+                        </p>
+                    </article>
+
+                </div>
+
+                <p style="text-align:center; margin-top:25px;">
+                    <a href="packages.html" class="btn">
+                        View All Packages
+                    </a>
+                </p>
+
+            </div>
+        </section>
+
+
+        <!-- CONTACT CALL TO ACTION -->
+        <section class="section">
+            <div class="container">
+
+                <div class="cta">
+
+                    <div class="eyebrow">YOUR NEXT CHAPTER STARTS HERE</div>
+
+                    <h2>Ready to Experience SkyNe<span lang="en-gb">s</span>t?</h2>
+
+                    <p>
+                        Have questions or want to learn more about
+                        our accommodation options? Get in touch
+                        with our team.
+                    </p>
+
+                    <a href="contact.html" class="btn">
+                        Contact Us
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+
+        <div class="container footer-inner">
+
+            <div>
+                <strong><span class="auto-style6">SkyNe</span><span class="auto-style6" lang="en-gb">s</span><span class="auto-style6">t Co-Living Space</span></strong>
+                <p class="auto-style5">
+                    A place to live, connect and grow.
+                </p>
+				<p><span lang="en-gb">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<span class="auto-style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span></span><a href="about.html"><span class="auto-style6">About Us</span></a><span class="auto-style6" lang="en-gb">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span>&nbsp;<a href="facilities.html"><span class="auto-style6">Facilities</span></a>
+				<span class="auto-style6" lang="en-gb">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span><a href="packages.html"><span class="auto-style6">Packages</span></a><span class="auto-style6" lang="en-gb">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span><a href="contact.html"><span class="auto-style6">Contact</span></a>
+				<span lang="en-gb"><span class="auto-style6">&nbsp;&nbsp;&nbsp;&nbsp;
+				</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span></p>
+				<p class="auto-style13"><span class="auto-style5" lang="en-gb">
+				.Premium</span></p>
+				<p class="auto-style13"><span class="auto-style5" lang="en-gb">
+				.Standard</span></p>
+				<p class="auto-style13"><span class="auto-style5" lang="en-gb">
+				.Short-Term</span></p>
+				<p class="auto-style13"><span class="auto-style5" lang="en-gb">
+				.Custom</span><br></p>
+            </div>
+
+        </div>
+
+    </footer>
+<script>
+
+    const videos = [
+        "hotel room.mp4",
+        "pool view.mp4",
+        "balcony view.mp4"
+    ];
+
+    let currentVideo = 0;
+
+    let activeVideo = document.getElementById("video1");
+    let nextVideo = document.getElementById("video2");
+
+    activeVideo.src = videos[0];
+    activeVideo.load();
+
+    activeVideo.addEventListener("ended", playNextVideo);
+
+    function playNextVideo() {
+
+        currentVideo = (currentVideo + 1) % videos.length;
+
+        nextVideo.src = videos[currentVideo];
+        nextVideo.load();
+
+        nextVideo.oncanplay = function () {
+
+            nextVideo.play();
+
+            nextVideo.classList.remove("video-hidden");
+            nextVideo.classList.add("video-visible");
+
+            activeVideo.classList.remove("video-visible");
+            activeVideo.classList.add("video-hidden");
+
+            activeVideo.pause();
+
+            let temporary = activeVideo;
+            activeVideo = nextVideo;
+            nextVideo = temporary;
+
+            activeVideo.onended = playNextVideo;
+        };
+    }
+
+</script>
+
+</body>
+</html>
+</body>
+</html>
